@@ -186,7 +186,7 @@ victoires <- afcon %>%
 p5 <- ggplot(victoires, aes(x = reorder(winner, n), y = n, fill = n)) +
   geom_col() + 
   coord_flip() + 
-  scale_fill_gradient(low = "#4facfe", high = "#00f2fe") + 
+  scale_fill_gradient(low = "#FFE5CC", high = "#FF9933") +
   geom_text(aes(label = n), hjust = 1.2, color = "white", fontface = "bold") + 
   labs(title = "5. Les Rois de la Victoire",
        x = "", y = "Nombre de victoires") +
